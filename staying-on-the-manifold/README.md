@@ -1,19 +1,25 @@
 # Staying on the Manifold: Geometry-Aware Noise Injection
 
-<!-- ![alt text](image.png) -->
+Official repository for the paper <i>"Staying on the Manifold: Geometry-Aware Noise Injection"</i>. 
+
+The repository contains a framework for sampling points on the tangent space, generating geodesics and evolving Brownian motion for some parametrised manifolds and deformed versions of these.
+
+| Considered manifolds | Methods applied |
+|----------------------------------------------------------------------|-------|
+| <img src="figures/manifolds.png" width="900"/> | <img src="figures/methods.png" width="300"/> |
+
+### Installation
+
+You can either clone the repository and run:
+    
+    pip install . 
+    
+within the folder. Or directly run
+    
+    pip install https://github.com/albertkjoller/geometric_noise
 
 
-<p align="left">
-  Official repository for the paper <i>"Staying on the Manifold: Geometry-Aware Noise Injection"</i>. 
-  
-  The repository contains a framework for sampling points on the tangent space, generating geodesics and evolving Brownian motion for some parametrised manifolds and deformed versions of these.
-</p>
-
-<p align="right">
-  <img src="figures/methods.png" width="200"/>
-</p>
-
-### Example: geodesics
+### Example: computing geodesics
 
     from geometric_noise.manifolds import Sphere
     from joblib import Parallel, delayed
@@ -63,4 +69,3 @@ The experiment can be reproduced by running `run_experiment.sh manifold_name` wi
 - `onion-ring`
 - `bead`
 - `swiss-roll`
-
