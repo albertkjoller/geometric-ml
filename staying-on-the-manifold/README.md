@@ -10,19 +10,17 @@ The repository contains a framework for sampling points on the tangent space, ge
 
 ### Installation
 
-You can either clone the repository and run:
+Clone the repository and run:
     
     pip install . 
     
-within the folder. Or directly run
-    
-    pip install https://github.com/albertkjoller/geometric_noise
-
+within the folder. 
 
 ### Example: computing geodesics
-
-    from geometric_noise.manifolds import Sphere
+    
+    import torch
     from joblib import Parallel, delayed
+    from geometric_noise.manifolds import Sphere
 
     # Define manifold
     manifold = Sphere(return_torch=True)
@@ -53,6 +51,18 @@ within the folder. Or directly run
 
 
 ### Example: Brownian motion on the manifold
+    
+    import torch
+    from geometric_noise.manifolds import Sphere
+    
+    # Define manifold
+    manifold = Sphere(return_torch=True)
+
+    # Generate some points in the local coordinates
+    U = torch.tensor([[1/2*torch.pi, 0.], [1/2*torch.pi, 1/2*torch.pi]])
+
+    # Set noise intensity
+    noise_intensity = 0.5
 
     # Compute endpoint of Brownian motion on manifold from the associated random process in local coordinates 
     BMs_on_manifold = torch.vmap(lambda u: manifold.brownian_motion(u[None, :], diffusion_time=noise_intensity, num_steps=100, return_trajectories=False)[0], randomness='different')(U)
