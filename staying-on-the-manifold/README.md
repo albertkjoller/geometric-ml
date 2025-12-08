@@ -16,7 +16,7 @@ Clone the repository and run:
     
 within the folder. 
 
-### Example: computing geodesics
+### Example 1: computing geodesics
     
     import torch
     from joblib import Parallel, delayed
@@ -50,7 +50,7 @@ within the folder.
     X_noisy = torch.stack(geodesics)[:, -1, :]
 
 
-### Example: Brownian motion on the manifold
+### Example 2: Brownian motion on the manifold
     
     import torch
     from geometric_noise.manifolds import Sphere
@@ -70,12 +70,23 @@ within the folder.
     # Use the endpoint as the noisy sample
     X_noisy = BMs_on_manifold[:, -1, :].squeeze(1)
 
+### Example 3: Brownian motion on the MNIST image manifold
+
+<p align="center">
+    <img src="figures/mnist_noise_animation.gif" width="900" alt="Animated geometry-aware noise on the MNIST manifold"/>
+</p>
+<p align="center"><em>Animation: geometry-aware perturbations (Brownian motion) on the MNIST manifold. See the `mnist.ipynb` notebook for generation details.</em></p>
+
+We provide an example on how to generate geometry-aware noise observations from a data manifold approximated by an autoencoder in the `mnist.ipynb` notebook. 
+
 
 ## Reproducibility
-The experiment can be reproduced by running `run_experiment.sh manifold_name` with `manifold_name` being one of:
+The experiment for the simple parameterised manifolds can be reproduced by running `run_experiment.sh manifold_name` with `manifold_name` being one of:
 - `sphere`
 - `squeezed-sphere`
 - `deformed-sphere`
 - `onion-ring`
 - `bead`
 - `swiss-roll`
+
+For the MNIST experiment, results can be reproduced by running `run_experiment.sh` on a GPU-accelerated machine.
