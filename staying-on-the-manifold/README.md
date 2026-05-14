@@ -90,3 +90,17 @@ The experiment for the simple parameterised manifolds can be reproduced by runni
 - `swiss-roll`
 
 For the MNIST experiment, results can be reproduced by running `run_experiment.sh` on a GPU-accelerated machine.
+
+## Citation
+
+If you use the code in your work, please cite the paper:
+```
+@inproceedings{jacobsen2026staying,
+  title={Staying on the Manifold: Geometry-Aware Noise Injection},
+  author={Jacobsen, Albert Kj{\o}ller and Gegenfurtner, Johanna Marie and Arvanitidis, Georgios},
+  booktitle={Northern Lights Deep Learning Conference},
+  pages={179--190},
+  year={2026},
+  organization={PMLR}
+}
+```

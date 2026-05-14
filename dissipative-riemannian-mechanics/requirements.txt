@@ -1,0 +1,11 @@
+setuptools==80.9.0
+matplotlib
+seaborn
+tqdm
+torchdiffeq
+scikit-learn
+laplace-torch==0.2.2.2
+curvlinops-for-pytorch==2.0.1
+netcal
+PyYAML
+jupyter
