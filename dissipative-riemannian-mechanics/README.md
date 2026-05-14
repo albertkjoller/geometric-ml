@@ -14,7 +14,7 @@ Create a conda environment, e.g. with the following command:
     
     conda create -n dims python=3.12 -y
 
-Then clone the repository and install it by:
+Then clone the repository and install it by running the following command within this folder:
     
     pip install .
 
