@@ -15,5 +15,5 @@ This repository contains code for the papers:
 
 - *Don't Stop Me **Yet**: Sampling Loss Minima via Dissipative Riemannian Mechanics*, A.K. Jacobsen, L.U. Jakobsen, J.M. Gegenfurtner, G. Arvanitidis (preprint)
 
-  [![PDF](https://img.shields.io/badge/PDF-red?logo=adobeacrobatreader&logoColor=white)](...)
+  [![PDF](https://img.shields.io/badge/PDF-red?logo=adobeacrobatreader&logoColor=white)](https://arxiv.org/pdf/2605.15459)
   [![Code](https://img.shields.io/badge/Code-blue?logo=github&logoColor=white)](https://github.com/albertkjoller/geometric-ml/tree/main/dissipative-riemannian-mechanics)
