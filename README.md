@@ -1,5 +1,5 @@
 # Geometric Machine Learning
-A collection of repositories for authored papers, related to Riemannian geometry and machine learning.
+A collection of repositories for papers I authored, related to Riemannian geometry and machine learning.
 
 This repository contains code for the papers:
 - *"Staying on the Manifold: Geometry-Aware Noise Injection"*, A.K. Jacobsen*, J.M. Gegenfurtner*, G. Arvanitidis (Northern Lights Deep Learning Conference 2026)
